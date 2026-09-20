@@ -1,0 +1,300 @@
+{
+    "meta": {
+        "generated": "2026-09-20 14:18:34.780388",
+        "dataset": "fafb",
+        "data_version": "783",
+        "query": "720575940606922674",
+        "min_syn_cnt": 5,
+        "nt_types": null,
+        "url": "http://codex.flywire.ai/app/connectivity?dataset=fafb&cell_names_or_ids=720575940606922674&download=json&node_label_attribute=cell_type&group_by=&edge_filter=all&include_partners=1&cap=50&min_syn_cnt=5&limit=0"
+    },
+    "network": {
+        "nodes": {
+            "720575940603231916": {
+                "name": "AL.MB_CA.127",
+                "nt_type": "ACH",
+                "root_id": 720575940603231916,
+                "class": "ALPN"
+            },
+            "720575940605102694": {
+                "name": "AL.MB_CA.111",
+                "nt_type": "ACH",
+                "root_id": 720575940605102694,
+                "class": "ALPN"
+            },
+            "720575940606922674": {
+                "name": "AL.2223",
+                "nt_type": "ACH",
+                "root_id": 720575940606922674,
+                "class": "olfactory"
+            },
+            "720575940609282825": {
+                "name": "AL.3",
+                "nt_type": "GABA",
+                "root_id": 720575940609282825,
+                "class": "ALLN"
+            },
+            "720575940613345442": {
+                "name": "AL.MB_CA.129",
+                "nt_type": "ACH",
+                "root_id": 720575940613345442,
+                "class": "ALPN"
+            },
+            "720575940613804259": {
+                "name": "AL.32",
+                "nt_type": "SER",
+                "root_id": 720575940613804259,
+                "class": "ALLN"
+            },
+            "720575940614309535": {
+                "name": "AL.MB_CA.125",
+                "nt_type": "ACH",
+                "root_id": 720575940614309535,
+                "class": "ALPN"
+            },
+            "720575940614956072": {
+                "name": "AL.17",
+                "root_id": 720575940614956072,
+                "class": "ALLN"
+            },
+            "720575940617229632": {
+                "name": "AL.MB_CA.133",
+                "nt_type": "ACH",
+                "root_id": 720575940617229632,
+                "class": "ALPN"
+            },
+            "720575940617561669": {
+                "name": "AL.GNG.3",
+                "nt_type": "GABA",
+                "root_id": 720575940617561669,
+                "class": "ALON"
+            },
+            "720575940620541349": {
+                "name": "AL.157",
+                "nt_type": "SER",
+                "root_id": 720575940620541349,
+                "class": "ALLN"
+            },
+            "720575940621185050": {
+                "name": "AL.MB_CA.135",
+                "nt_type": "ACH",
+                "root_id": 720575940621185050,
+                "class": "ALPN"
+            },
+            "720575940621239679": {
+                "name": "AL.MB_CA.128",
+                "nt_type": "ACH",
+                "root_id": 720575940621239679,
+                "class": "ALPN"
+            },
+            "720575940623000858": {
+                "name": "AL.2",
+                "nt_type": "GABA",
+                "root_id": 720575940623000858,
+                "class": "ALLN"
+            },
+            "720575940623543881": {
+                "name": "AL.LH.83",
+                "nt_type": "ACH",
+                "root_id": 720575940623543881,
+                "class": "ALPN"
+            },
+            "720575940626034819": {
+                "name": "AL.MB_CA.139",
+                "nt_type": "ACH",
+                "root_id": 720575940626034819,
+                "class": "ALPN"
+            },
+            "720575940630066007": {
+                "name": "AL.MB_CA.83",
+                "nt_type": "ACH",
+                "root_id": 720575940630066007,
+                "class": "ALPN"
+            },
+            "720575940630407388": {
+                "name": "AL.12",
+                "root_id": 720575940630407388,
+                "class": "ALLN"
+            },
+            "720575940632403986": {
+                "name": "AL.5",
+                "root_id": 720575940632403986,
+                "class": "ALLN"
+            },
+            "720575940634545890": {
+                "name": "AL.4",
+                "nt_type": "GABA",
+                "root_id": 720575940634545890,
+                "class": "ALLN"
+            },
+            "720575940637208718": {
+                "name": "AL.MB_CA.108",
+                "nt_type": "ACH",
+                "root_id": 720575940637208718,
+                "class": "ALPN"
+            },
+            "720575940646122804": {
+                "name": "AL.LH.97",
+                "nt_type": "GABA",
+                "root_id": 720575940646122804,
+                "class": "ALPN"
+            }
+        },
+        "edges": [
+            {
+                "from": 720575940623000858,
+                "to": 720575940606922674,
+                "neuropil": "AL_L",
+                "synapses": 5,
+                "nt_type": "GABA"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940632403986,
+                "neuropil": "AL_L",
+                "synapses": 1,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940632403986,
+                "neuropil": "AL_R",
+                "synapses": 14,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940620541349,
+                "neuropil": "AL_L",
+                "synapses": 13,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940630066007,
+                "neuropil": "AL_R",
+                "synapses": 12,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940613345442,
+                "neuropil": "AL_L",
+                "synapses": 12,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940623543881,
+                "neuropil": "AL_R",
+                "synapses": 11,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940617229632,
+                "neuropil": "AL_R",
+                "synapses": 9,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940626034819,
+                "neuropil": "AL_L",
+                "synapses": 9,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940621185050,
+                "neuropil": "AL_L",
+                "synapses": 8,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940603231916,
+                "neuropil": "AL_L",
+                "synapses": 8,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940614956072,
+                "neuropil": "AL_R",
+                "synapses": 7,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940621239679,
+                "neuropil": "AL_R",
+                "synapses": 7,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940614309535,
+                "neuropil": "AL_L",
+                "synapses": 7,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940646122804,
+                "neuropil": "AL_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940609282825,
+                "neuropil": "AL_R",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940613804259,
+                "neuropil": "AL_R",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940630407388,
+                "neuropil": "AL_R",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940637208718,
+                "neuropil": "AL_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940605102694,
+                "neuropil": "AL_L",
+                "synapses": 5,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940617561669,
+                "neuropil": "AL_L",
+                "synapses": 5,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940606922674,
+                "to": 720575940634545890,
+                "neuropil": "AL_R",
+                "synapses": 5,
+                "nt_type": "ACH"
+            }
+        ]
+    }
+}

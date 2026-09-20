@@ -1,0 +1,239 @@
+{
+    "meta": {
+        "generated": "2026-09-20 14:21:09.635347",
+        "dataset": "fafb",
+        "data_version": "783",
+        "query": "720575940623896600",
+        "min_syn_cnt": 5,
+        "nt_types": null,
+        "url": "http://codex.flywire.ai/app/connectivity?dataset=fafb&cell_names_or_ids=720575940623896600&download=json&node_label_attribute=cell_type&group_by=&edge_filter=all&include_partners=1&cap=50&min_syn_cnt=5&limit=0"
+    },
+    "network": {
+        "nodes": {
+            "720575940604624096": {
+                "name": "ME.32774",
+                "nt_type": "ACH",
+                "root_id": 720575940604624096,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940607334530": {
+                "name": "ME.18563",
+                "nt_type": "GLUT",
+                "root_id": 720575940607334530,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940613047519": {
+                "name": "ME.AOTU.63",
+                "nt_type": "ACH",
+                "root_id": 720575940613047519
+            },
+            "720575940615663682": {
+                "name": "ME.24222",
+                "nt_type": "GLUT",
+                "root_id": 720575940615663682,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940616303545": {
+                "name": "ME.AOTU.200",
+                "nt_type": "ACH",
+                "root_id": 720575940616303545
+            },
+            "720575940621095533": {
+                "name": "ME.15723",
+                "nt_type": "GLUT",
+                "root_id": 720575940621095533,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940623896600": {
+                "name": "ME.41550",
+                "root_id": 720575940623896600,
+                "class": "visual"
+            },
+            "720575940625375357": {
+                "name": "ME.AOTU.74",
+                "nt_type": "ACH",
+                "root_id": 720575940625375357
+            },
+            "720575940626388499": {
+                "name": "ME.1016",
+                "nt_type": "GABA",
+                "root_id": 720575940626388499,
+                "class": "bilateral"
+            },
+            "720575940628547023": {
+                "name": "ME.25679",
+                "nt_type": "GLUT",
+                "root_id": 720575940628547023,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940628864505": {
+                "name": "ME.13503",
+                "nt_type": "GLUT",
+                "root_id": 720575940628864505,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940630846508": {
+                "name": "ME.34192",
+                "nt_type": "ACH",
+                "root_id": 720575940630846508,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940630927311": {
+                "name": "ME.26631",
+                "nt_type": "GABA",
+                "root_id": 720575940630927311,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940631705797": {
+                "name": "ME.43682",
+                "root_id": 720575940631705797,
+                "class": "visual"
+            },
+            "720575940634689888": {
+                "name": "ME.22810",
+                "nt_type": "ACH",
+                "root_id": 720575940634689888,
+                "class": "optic_lobe_intrinsic"
+            },
+            "720575940635819376": {
+                "name": "ME.AOTU.78",
+                "nt_type": "ACH",
+                "root_id": 720575940635819376
+            },
+            "720575940650685305": {
+                "name": "ME.833",
+                "nt_type": "GABA",
+                "root_id": 720575940650685305,
+                "class": "bilateral"
+            }
+        },
+        "edges": [
+            {
+                "from": 720575940631705797,
+                "to": 720575940623896600,
+                "neuropil": "LA_L",
+                "synapses": 1,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940631705797,
+                "to": 720575940623896600,
+                "neuropil": "ME_L",
+                "synapses": 41,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940607334530,
+                "neuropil": "ME_L",
+                "synapses": 29,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940628864505,
+                "neuropil": "ME_L",
+                "synapses": 24,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940631705797,
+                "neuropil": "ME_L",
+                "synapses": 18,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940613047519,
+                "neuropil": "ME_L",
+                "synapses": 12,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940615663682,
+                "neuropil": "ME_L",
+                "synapses": 11,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940634689888,
+                "neuropil": "ME_L",
+                "synapses": 10,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940635819376,
+                "neuropil": "ME_L",
+                "synapses": 9,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940625375357,
+                "neuropil": "ME_L",
+                "synapses": 7,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940628547023,
+                "neuropil": "ME_L",
+                "synapses": 7,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940650685305,
+                "neuropil": "ME_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940630846508,
+                "neuropil": "ME_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940621095533,
+                "neuropil": "ME_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940616303545,
+                "neuropil": "ME_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940604624096,
+                "neuropil": "ME_L",
+                "synapses": 6,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940630927311,
+                "neuropil": "ME_L",
+                "synapses": 5,
+                "nt_type": "ACH"
+            },
+            {
+                "from": 720575940623896600,
+                "to": 720575940626388499,
+                "neuropil": "ME_L",
+                "synapses": 5,
+                "nt_type": "ACH"
+            }
+        ]
+    }
+}

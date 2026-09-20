@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>FlyWire: Neural Pulse</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <main class="app">
+
+
+        <!-- ============================= -->
+        <!-- HEADER -->
+        <!-- ============================= -->
+
+        <header class="header">
+
+            <div>
+
+                <h1>
+                    FLYWIRE: NEURAL PULSE
+                </h1>
+
+                <p>
+                    Stimulate. Propagate. Respond.
+                </p>
+
+            </div>
+
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                SIMULATION READY
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ============================= -->
+        <!-- STIMULUS CONTROLS -->
+        <!-- ============================= -->
+
+        <section class="controls">
+
+            <h2>
+                Choose a stimulus
+            </h2>
+
+
+            <div class="stimulus-buttons">
+
+                <button
+                    class="stimulus-btn"
+                    data-stimulus="sugar"
+                >
+                    🍬 Sugar
+                </button>
+
+
+                <button
+                    class="stimulus-btn"
+                    data-stimulus="smell"
+                >
+                    🌸 Smell
+                </button>
+
+
+                <button
+                    class="stimulus-btn"
+                    data-stimulus="light"
+                >
+                    ☀️ Light
+                </button>
+
+
+                <button
+                    class="stimulus-btn"
+                    data-stimulus="touch"
+                >
+                    ✋ Touch
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- SIMULATION AREA -->
+        <!-- ============================= -->
+
+        <section class="simulation-area">
+
+
+            <div class="network-container">
+
+                <canvas
+                    id="brainCanvas"
+                ></canvas>
+
+
+                <div
+                    class="network-label input-label"
+                >
+                    SENSORY INPUT
+                </div>
+
+
+                <div
+                    class="network-label output-label"
+                >
+                    OUTPUT
+                </div>
+
+            </div>
+
+
+
+            <!-- ========================= -->
+            <!-- STATS PANEL -->
+            <!-- ========================= -->
+
+            <aside class="stats-panel">
+
+                <h2>
+                    Neural Activity
+                </h2>
+
+
+                <div class="stat">
+
+                    <span>
+                        Neurons fired
+                    </span>
+
+                    <strong id="neuronsFired">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>
+                        Connections used
+                    </span>
+
+                    <strong id="connectionsUsed">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>
+                        Simulation time
+                    </span>
+
+                    <strong id="simulationTime">
+                        0.00 s
+                    </strong>
+
+                </div>
+
+
+
+                <!-- SIMULATED RESPONSE -->
+
+                <div class="response-box">
+
+                    <span>
+                        SIMULATED RESPONSE
+                    </span>
+
+
+                    <h3 id="response">
+                        Waiting...
+                    </h3>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- LEGEND + EXPLANATION -->
+        <!-- ============================= -->
+
+        <section class="legend-section">
+
+
+            <!-- LEGEND -->
+
+            <div class="legend-box">
+
+                <h2>
+                    Neural Signal Legend
+                </h2>
+
+
+                <div class="legend-items">
+
+
+                    <div class="legend-item">
+
+                        <span
+                            class="legend-dot ach"
+                        ></span>
+
+                        <span>
+                            Blue — Acetylcholine (ACH)
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="legend-item">
+
+                        <span
+                            class="legend-dot gaba"
+                        ></span>
+
+                        <span>
+                            Purple — GABA
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="legend-item">
+
+                        <span
+                            class="legend-dot glut"
+                        ></span>
+
+                        <span>
+                            Green — Glutamate (GLUT)
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="legend-item">
+
+                        <span
+                            class="legend-dot signal"
+                        ></span>
+
+                        <span>
+                            White — Neural signal
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="legend-item">
+
+                        <span
+                            class="legend-dot active"
+                        ></span>
+
+                        <span>
+                            Cyan — Active connection
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- EXPLANATION -->
+
+            <div class="explanation-box">
+
+                <h2>
+                    About this simulation
+                </h2>
+
+
+                <p>
+                    Real FlyWire data is used for
+                    the neurons and connections
+                    in the gustatory pathway.
+                </p>
+
+
+                <p>
+                    Signal propagation and the
+                    simulated behavioral response
+                    are visualized for educational
+                    purposes.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- BOTTOM CONTROLS -->
+        <!-- ============================= -->
+
+        <section class="bottom-controls">
+
+
+            <button id="startBtn">
+                ▶ Start
+            </button>
+
+
+            <button id="pauseBtn">
+                ⏸ Pause
+            </button>
+
+
+            <button id="resetBtn">
+                ↻ Reset
+            </button>
+
+
+            <label>
+
+                Speed
+
+                <input
+                    type="range"
+                    id="speedSlider"
+                    min="0.5"
+                    max="3"
+                    step="0.1"
+                    value="1"
+                >
+
+            </label>
+
+        </section>
+
+
+
+        <!-- ============================= -->
+        <!-- FOOTER -->
+        <!-- ============================= -->
+
+        <footer>
+
+            Educational visualization inspired by
+            the FlyWire fruit-fly connectome.
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
