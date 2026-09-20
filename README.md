@@ -1,4 +1,4 @@
-# 🧠 FlyWire: Neural Pulse
+# FlyWire: Neural Pulse
 
 ### Stimulate. Propagate. Respond.
 
@@ -6,14 +6,14 @@ An interactive neural simulation built using real data from the **FlyWire fruit-
 
 The simulation allows users to select four sensory stimuli:
 
-- 🍬 Sugar
-- 🌸 Smell
-- ☀️ Light
-- ✋ Touch
+-  Sugar
+- Smell
+- Light
+- Touch
 
 The selected stimulus activates a corresponding neural pathway, and the signal is visualized as it propagates through connected neurons.
 
-## 🛠️ Technologies
+## Technologies
 
 - HTML
 - CSS
@@ -22,14 +22,14 @@ The selected stimulus activates a corresponding neural pathway, and the signal i
 - JSON
 - FlyWire Connectome Data
 
-## 🎯 Purpose
+## Purpose
 
 To make complex neural connectivity data easier to understand through an interactive visualization.
 
-## 🌐 Live Demo
+## Live Demo
 
 https://valen-cea.github.io/FlyWire-Neural-Pulse/
 
-## ⚠️ Note
+## Note
 
 The neuron and connection data are based on real FlyWire data. Signal animation, timing, and behavioral responses are simplified for educational purposes.
